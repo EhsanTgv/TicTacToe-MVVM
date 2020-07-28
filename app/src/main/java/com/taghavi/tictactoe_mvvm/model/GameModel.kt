@@ -7,7 +7,7 @@ class GameModel(playerOne: String?, playerTwo: String?) {
     var player1: PlayerModel? = null
     var player2: PlayerModel? = null
     var currentPlayer: PlayerModel? = player1
-    private var cells: Array<Array<CellModel?>>?
+    var cells: Array<Array<CellModel?>>?
     var winner: MutableLiveData<PlayerModel> = MutableLiveData()
     fun switchPlayer() {
         currentPlayer = if (currentPlayer === player1) player2 else player1
